@@ -9,7 +9,7 @@ Most UI libraries take one of two forms:
 A user typically wants one of the following solutions:
 
  * The ability to build user interfaces with a visual aid to allow building UI fast and efficiently, without needing to think about internals.
- * And/or the ability the build custom widgets without fighting the library they work with.
+ * And/or the ability to build custom widgets without fighting the library they work with.
 
 Layout libraries come closest to *both* solutions but extensions typically require extensive knowledge of the underlying library code. Most people prefer to skip the nuances of the limitations most UI libraries provide (Dear ImGui is considered the most complete) and choose, instead, to either build a generic layout library or use an existing one (Clay and others) if suitable.
 
