@@ -19,7 +19,7 @@ Widget :: struct {
     base_id : clay.ElementId,
 
     variant : union{
-        NumericUpDown,
+        ^NumericUpDown,
     }
 }
 
