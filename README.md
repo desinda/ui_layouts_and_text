@@ -17,7 +17,7 @@ Moreover, the biggest challenge that no one dares to touch is text. Text renderi
 
 The typical strategy is to rasterise font glyphs in advance and upload the glyphs into a texture that's blit to a specific region on-screen. This is your "traditional" caching strategy. Libraries like Harfbuzz are playing around with GPU-rendered text, which is the idea of rasterising text on the GPU (through a shader in their case) rather than on the CPU. Since text is mostly geometry, handing off this complex render math to the GPU makes more sense than trying to rasterise on the CPU. If you used Harfbuzz, you typically pair it with FreeType, as FreeType is the loader and rasteriser. Harfbuzz is generally used to form glyphs from font data and pass that back to FreeType for rendering.
 
-With GPU accelerated glyph transforms, the possibility arises that FreeType rasterisation can be skipped and letting the GPU with access to 64-bit and 128-bit floating point math make glyph rasterisation far more accurate and sub-pixel rendering significantly more efficient than prior caching strategies.
+With GPU accelerated glyph transforms, the possibility arises that FreeType rasterisation can be skipped and let the GPU make calculated glyphs far more accurate and sub-pixel rendering significantly more efficient than prior caching strategies.
 
 I realise I'm ranting here about text rendering, but it is important as most UI relies on it.
 
